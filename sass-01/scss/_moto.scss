@@ -1,0 +1,16 @@
+.moto {
+    h2 {
+        color: $color-01;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    li {
+        color: $color-04;
+
+        a {
+            background-color: $bg-color;
+            padding: 1rem 0;
+        }
+    }
+}

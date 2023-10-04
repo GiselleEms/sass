@@ -1,0 +1,49 @@
+.blocks {
+
+    padding: 3rem 2rem;
+
+    background-color: $color-03;
+
+    h2 {
+        color: $color-02;
+    }
+
+    ul {
+        list-style-type: none;
+        font-size: $font-small;
+        display: flex;
+        justify-content: space-between;
+        height: 250px;
+        padding: 1rem 0;
+        width: 100%;
+        margin-bottom:2rem;
+    }
+
+    li {
+        color: $color-02;
+        display: block;
+        margin: $space-default auto;
+        width: 30%;
+        
+        .img-container {
+            display: block;
+            height: 200px;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        a {
+            background-color: $color-01;
+            border-radius: 5px;
+            color: white;
+            display: block;
+            font-size: $font-normal;
+            margin: $mt-02 auto $mb;
+            padding: 4px 8px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+
+}
