@@ -1,0 +1,39 @@
+@mixin theme($theme: $bg-color, $bg: $color-06) {
+    background-color: $bg;
+    border: 2px solid $theme;
+    box-shadow: 0 0 1px rgba($color-default, .25);
+}
+
+.moto  {
+
+    &__title {
+        color: $color-01;
+    }
+    
+    &__item {
+        @include theme($theme: $color-06, $bg: #161616);
+        color: $color-04;
+        display: flex;
+        float: left;
+        height: max-content;
+        justify-content: center;
+        align-items: baseline;
+        flex-flow: column;
+
+        &--destack {
+            @include theme;
+        }
+
+    }
+
+    &__button {
+        background-color: $bg-color;
+        padding: 1rem 0;
+
+    }
+
+    
+    &__destack {
+        background-color: $color-05;
+    }
+}

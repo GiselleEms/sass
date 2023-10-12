@@ -1,0 +1,81 @@
+.blocks {
+
+      /* 
+        BEM CSS
+        - Block
+        - Element 
+        - Modifier*/
+
+
+    padding: 3rem 2rem;
+
+    background-color: $color-03; 
+
+    &__title {
+        color: $color-02;
+    }
+
+    &__list {
+        list-style-type: none;
+        font-size: $font-small;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+        width: 100%;
+
+        @media (max-width: $mobile) {
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        color: $color-02;
+        display: block;
+        margin: $space-default .75rem;
+        text-align: center;
+        width: calc(99% / 3 - 15px);
+
+        @media (max-width: $tablet) {
+            width: calc(99% - 30px);
+        }
+
+    }
+        
+    &__img-container {
+        display: block;
+        height: 15rem;
+        overflow: hidden;
+        width: 100%;
+        @media (max-width: $tablet) {
+            height: 20rem;
+        }
+    }
+
+
+    &__description {
+        color: $color-default;
+        font-size: $font-normal;
+        padding: $space-default;
+        text-align:center;
+
+        &--destack {
+            color: $color-02;
+        }
+    }
+
+
+  &__button {
+            background-color: $color-01;
+            border-radius: 5px;
+            color: white;
+            display: block;
+            font-size: $font-small;
+            margin: $mt auto $mb;
+            padding: 4px 8px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            width:50%;
+        }
+    }
+
